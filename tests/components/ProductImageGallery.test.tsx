@@ -13,7 +13,7 @@ describe('Product Image Gallery', () => {
 
         render(<ProductImageGallery imageUrls={imageURLs} />);
 
-        const images = screen.getAllByRole('img'); // this gets all the images on the page -> helpful for counting how many are displayed
+        const images = screen.getAllByRole('img'); // this gets all the images on the page -> helpful for counting how many images are displayed
         expect(images).toHaveLength(2);
 
         imageURLs.forEach((url, index) => {
